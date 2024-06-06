@@ -1,18 +1,23 @@
-import { useEffect } from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import NotFound from './pages/NotFound';
+import MainLayout from './layouts/MainLayout';
 
-function App() {
-  useEffect(() => {}, []);
-
-  return <h1>Hello World</h1>;
+export function App() {
+  return (
+    <Routes>
+      <Route element={<MainLayout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
+    </Routes>
+  );
 }
 
-function WrappedApp() {
+export function WrappedApp() {
   return (
     <BrowserRouter>
       <App />
     </BrowserRouter>
   );
 }
-
-export default WrappedApp;

@@ -14,7 +14,6 @@ module.exports = {
     'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
     'react/react-in-jsx-scope': 0,
     'import/no-extraneous-dependencies': 'off',
-    'jsx-quotes': ['error', 'prefer-single'],
     'max-len': [
       2,
       180,

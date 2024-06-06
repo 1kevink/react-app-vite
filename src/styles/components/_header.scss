@@ -1,0 +1,32 @@
+.header {
+  height: 50px;
+
+  .sections {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .sections__item {
+    display: flex;
+    align-items: center;
+
+    font-weight: 500;
+    font-size: 16px;
+    font-style: normal;
+
+    transition: color 0.3s;
+  }
+
+  .sections__item {
+    &:hover {
+      color: $orange;
+      cursor: pointer;
+    }
+
+    &_underline {
+      border-bottom: 1px solid $orange;
+    }
+  }
+}
