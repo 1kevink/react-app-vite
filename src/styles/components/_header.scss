@@ -1,20 +1,23 @@
 .header {
-  height: 50px;
+  height: 60px;
 
   .sections {
     display: flex;
     height: 100%;
     align-items: center;
     justify-content: flex-end;
+    gap: 25px;
+    padding: 0 25px;
   }
 
   .sections__item {
     display: flex;
     align-items: center;
 
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     font-style: normal;
+    letter-spacing: 0.9px;
 
     transition: color 0.3s;
   }

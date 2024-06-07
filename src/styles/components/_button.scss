@@ -1,0 +1,118 @@
+.btn {
+  display: flex;
+  padding: 0 10px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nunito", sans-serif;
+  overflow-wrap: break-word;
+  letter-spacing: 0.9px;
+
+  border-radius: 400px;
+
+  transition: background-color 0.3s;
+
+  span {
+    font-weight: 700;
+    margin-right: -10px;
+    transition: margin-right 0.3s;
+  }
+
+  .icon  {
+    margin-top: 5x;
+    opacity: 0;
+
+    transition: margin-left 0.3s, opacity 0.3s;
+  }
+
+  &:hover {
+    background-color: $orangeHover;
+    cursor: pointer;
+
+    .icon {
+      margin-left: 10px;
+      opacity: 1;
+    }
+
+    span {
+      margin-right: 0;
+    }
+  }
+
+  &-large {
+    height: 60px;
+    width: 140px;
+  }
+
+  &-medium {
+    height: 50px;
+    width: 120px;
+  }
+
+  &-small {
+    height: 40px;
+    width: 100px;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &_passed {
+    color: $cadetBlue;
+  }
+
+  &__text {
+    margin-right: 0 !important;
+  }
+
+  &__image {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__container {
+    visibility: hidden;
+  }
+}
+
+.primary {
+  color: $white;
+  font-weight: 600;
+
+  border: none;
+
+  background-color: $orange;
+}
+
+.btnCancel {
+  color: $red;
+  border: 1px solid $red;
+
+  &:hover {
+    color: $white;
+
+    border: $black;
+  }
+}
+.btnCancelDelete{
+  color: $red;
+  border: 1px solid $red;
+  width: 180px;
+  font-weight: 600;
+
+  &:hover {
+    color: $white;
+
+    border: $black;
+  }
+}
+.disabled {
+  color: $black;
+
+  border: none;
+
+  background-color: $cadetBlue;
+
+  pointer-events: none;
+}

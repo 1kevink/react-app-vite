@@ -1,8 +1,10 @@
 @import "variable";
 
+@import "components/button";
 @import "components/header";
 
 @import url("https://rsms.me/inter/inter.css");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 * {
   box-sizing: border-box;
@@ -17,7 +19,7 @@ body {
 
   font-weight: 400;
   font-size: 16px;
-  font-family: "Inter", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 html,
@@ -27,10 +29,16 @@ body,
 
   font-weight: 400;
   font-size: 16px;
-  font-family: "Inter", sans-serif;
+  font-family: "Nunito", sans-serif;
 
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.mainLayout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .wrapper {
